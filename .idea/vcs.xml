@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/storage/app/git/estudo-javascript" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/estudo-pacote-laravel" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/full-portfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/fullstack-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/lumen-unit-test" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/mapleheart" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/markdown-portfolio" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/mvc4noobs" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/socket-da-velha" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/solfejo-game" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/tribalwars-bot" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/twitch-better-streamer-chat" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/storage/app/git/vagas" vcs="Git" />
+  </component>
+</project>
