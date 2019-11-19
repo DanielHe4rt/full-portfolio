@@ -12,5 +12,8 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('portfolio');
 });
+
+Route::post('/auth/login', 'Auth\\AuthCOntroller@postLogin');
+Route::post('/auth/login', 'Auth\\AuthCOntroller@postLogin');

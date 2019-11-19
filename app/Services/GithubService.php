@@ -10,6 +10,7 @@ namespace App\Services;
 
 
 use GuzzleHttp\Client;
+use GuzzleHttp\Exception\GuzzleException;
 
 class GithubService
 {
@@ -36,15 +37,25 @@ class GithubService
     {
         $uri = "/users/" . $username . "?" . ($type ? "type=" . $type : null) ;
 
-        $response = $this->api->request('GET', $uri);
-        return json_decode($response->getBody(), true);
+        try {
+            $response = $this->api->request('GET', $uri);
+            return json_decode($response->getBody(), true);
+        } catch (GuzzleException $e) {
+            echo $e->getMessage();
+        }
+
     }
 
     public function getUserRepositories($username)
     {
         $uri = "/users/" . $username . "/repos";
 
-        $response = $this->api->request('GET', $uri);
-        return json_decode($response->getBody(), true);
+        try {
+            $response = $this->api->request('GET', $uri);
+            return json_decode($response->getBody(), true);
+        } catch (GuzzleException $e) {
+            dd(1);
+        }
+
     }
 }

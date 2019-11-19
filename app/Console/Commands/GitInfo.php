@@ -56,7 +56,7 @@ class GitInfo extends Command
             $output = null;
             if (file_exists($directoryExists)) {
                 exec('rm -rf ' . $directoryExists, $output);
-                //$this->info("Repo " . $repo['name'] . " apagado!");
+                $this->info("Repo " . $repo['name'] . " apagado!");
             }
 
             exec('cd ' . $directory . " && git clone " . $repo['clone_url'], $output);
