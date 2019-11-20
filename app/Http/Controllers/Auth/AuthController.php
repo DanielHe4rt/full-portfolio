@@ -17,10 +17,7 @@ use App\Http\Controllers\Controller;
 use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Hash;
-use Illuminate\Support\Facades\Mail;
-use Ramsey\Uuid\Uuid;
+
 
 class AuthController extends Controller
 {
@@ -42,9 +39,10 @@ class AuthController extends Controller
         if (Auth::attempt($credentials)) {
             return $this->success();
         }
+        return $this->unauthorized();
     }
 
-    public function logOut(Request $request)
+    public function postLogout(Request $request)
     {
         Auth::logout();
         return redirect('/');
