@@ -2,92 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e88c47f-e20f-45c4-b1c4-a37813e2657b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Entities/Helpers/Access.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Entities/Mailer/Mail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Entities/Mailer/Status.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ViewController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Mailer/MailerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Http/Middleware/AccessLogger.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/ContactMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_193928_create_mails_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/migrations/2019_11_19_221712_create_device_access_table.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/database/seeds/UsersTableSeeder.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/adminlte.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/adminlte.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/adminlte.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/adminlte.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/all.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.components.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.components.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.components.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.core.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.core.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.core.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.core.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.extra-components.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.extra-components.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.extra-components.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.extra-components.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.pages.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.pages.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.pages.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.pages.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.plugins.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.plugins.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.plugins.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/admin/alt/adminlte.plugins.min.css.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/css/toastr.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/adminlte.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/adminlte.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/adminlte.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/adminlte.min.js.map" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/bootstrap.bundle.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/bootstrap.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/demo.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/jquery.min.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/pages/dashboard.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/pages/dashboard2.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/admin/pages/dashboard3.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/js/toastr.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/mailer/all.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/mailables/contact.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/test.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.example" beforeDir="false" afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Skill/Skill.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Skill/Time.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Entities/Skill/Type.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Skills/SkillsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/BaseRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Skill/SkillsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/View/ViewRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/skills.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/skill/all.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/mainentance.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Entities/Auth/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/Auth/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/AuthController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Entities/Mailer/Mail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Entities/Mailer/Mail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ViewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ViewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Mailer/MailerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Mailer/MailerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/application.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/client_default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/TweenMax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/admin-a901c427e71355ae2cc67d2d8d806bdc68a2bfa661953725d3039d.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/all.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/animate.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/application-857ea18b114e02460fda75e949394187cdf8897bc3e9e7c2.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/application-a6428d49ae9966295700bab6c893d96632b76a5128b33bb00.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/bg8luturuyaczcgd6s5j.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/bg8luturuyaczcgd6s5j_002.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/client.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/client_default.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/jquery.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/l.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/logo-programathor-46f45829f4c8d4f5bfd9d9aeb461b6d71839c37cc3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/files/scrollreveal.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/TweenMax.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/application.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/scrollreveal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/mailer/all.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/mailer/all.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/auth/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/auth/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/portfolio.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -246,6 +179,8 @@
       <updated>1566683584226</updated>
       <workItem from="1566683585374" duration="9104000" />
       <workItem from="1574130043097" duration="31123000" />
+      <workItem from="1574274550069" duration="15517000" />
+      <workItem from="1574353355624" duration="1261000" />
     </task>
     <servers />
   </component>
@@ -257,7 +192,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

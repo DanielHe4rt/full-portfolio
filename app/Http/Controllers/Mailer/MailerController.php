@@ -55,4 +55,16 @@ class MailerController extends Controller
         Mail::find($mailId)->update($request->all());
         return $this->success();
     }
+
+    public function deleteMail(Request $request, string $mailId){
+        $request->merge([
+            'id' => $mailId
+        ]);
+        $this->validate($request,[
+            'id' => 'required|exists:mails'
+        ]);
+
+        Mail::find($mailId)->delete();
+        return $this->success();
+    }
 }

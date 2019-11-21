@@ -65,13 +65,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link ">
+                        <a href="{{route('get-mail')}}" class="nav-link ">
                             <i class="nav-icon"></i>
                             <p>Mensagens</p>
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link ">
+                        <a href="{{route('get-skills')}}" class="nav-link ">
                             <i class="nav-icon"></i>
                             <p>Habilidades</p>
                         </a>
@@ -133,6 +133,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <!-- AdminLTE App -->
 <script src="{{asset('js/admin/adminlte.min.js')}}"></script>
 <script src="{{asset('js/toastr.js')}}"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
 <script>
     toastr.options = {
         "closeButton": true,

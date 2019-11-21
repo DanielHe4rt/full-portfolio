@@ -63,7 +63,8 @@
                 url: '{{route('auth-login')}}',
                 data: formData,
                 success: function (data) {
-                    toastr.success('Logado com sucesso! Bem vindo bb')
+                    toastr.success('Logado com sucesso! Bem vindo bb');
+                    window.location.href= "{{route('admin-dashboard')}}"
                 },
                 error: function (err){
                     let errors = err.responseJSON.errors;
