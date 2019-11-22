@@ -240,6 +240,10 @@ span.badge-framework {
     background-color: #c772ff;
     color: white;
 }
+span.badge-other {
+    background-color: 	#ff72f1;
+    color: white;
+}
 
 span.badge-platform {
     background-color: #72abff;

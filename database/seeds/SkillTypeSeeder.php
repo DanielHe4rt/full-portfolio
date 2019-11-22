@@ -12,7 +12,7 @@ class SkillTypeSeeder extends Seeder
     public function run()
     {
         $data = [
-            'language','framework','platform',
+            'language','framework','platform','others'
         ];
         foreach($data as $value){
             \App\Entities\Skill\Type::create(['name' => $value]);

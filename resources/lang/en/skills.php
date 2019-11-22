@@ -11,6 +11,7 @@ return [
     'type' => [
         'language' => 'Programming Language',
         'framework' => 'Framework',
-        'platform' => 'Platform'
+        'platform' => 'Platform',
+        'other' => 'Others'
     ]
 ];
