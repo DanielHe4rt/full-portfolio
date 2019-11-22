@@ -15,17 +15,17 @@
     <meta content="💻 Desenvolvedor Back, 20 anos e que curte programar em PHP" name="description">
     <!-- Android search bar color -->
     <meta content="#34495E" name="theme-color"><!-- Mobile icon -->
-    <meta content="DanielHeart Portfolio" property="og:title">
+    <meta content="DanielHeart - Portfólio" property="og:title">
     <meta content="website" property="og:type">
-    <meta content="💻 Desenvolvedor Back, 20 anos e que curte programar em PHP" property="og:description">
-    <meta content="Perfil de Daniel" property="og:site_name"><!-- Twitter Card data -->
+    <meta content="💻💻Desenvolvedor Back-end que curte criar Megazords com PHP" property="og:description">
+    <meta content="DanielHeart - Portfólio" property="og:site_name"><!-- Twitter Card data -->
     <meta content="summary_large_image" name="twitter:card">
     <meta content="@danielhe4rt" name="twitter:site">
-    <meta content="DanielHeart" name="twitter:title">
-    <meta content="💻 Desenvolvedor Back, 20 anos e que curte programar em PHP" name="twitter:description">
+    <meta content="DanielHeart - Portfólio" name="twitter:title">
+    <meta content="💻Desenvolvedor Back-end que curte criar Megazords com PHP" name="twitter:description">
     <meta content="@danielhe4rt" name="twitter:creator">
-    <meta content="DanielHeart Portfólio" itemprop="name">
-    <meta content="💻 Desenvolvedor Back, 20 anos e que curte programar em PHP" itemprop="description">
+    <meta content="DanielHeart - Portfólio" itemprop="name">
+    <meta content="💻💻Desenvolvedor Back-end que curte criar Megazords com PH" itemprop="description">
 </head>
 
 <body>
