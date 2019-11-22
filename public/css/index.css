@@ -74,6 +74,10 @@ h2 {
     color: var(--color-purple);
 }
 
+.base-purple{
+    color: var(--color-purple);
+}
+
 div.profile {
     max-width: 1020px !important;
     margin: 40px 0 20px;

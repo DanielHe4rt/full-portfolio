@@ -39,10 +39,10 @@
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav  ml-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">Portfólio <span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="#"> <i class="fa fa-home"></i> Portfólio </a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Resumo</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"> <i class="fa fa-file"></i> Resumo</a>
                 </li>
             </ul>
 
@@ -108,11 +108,14 @@
                 <div class="row">
                     <div class="col-sm-12 timeline-info">
                         <div class="timeline-time">
+                            <small>Empresa:</small>
+                            <h4>Fabapp</h4>
+                            <br>
                             <small>Duração:</small>
-                            <h4>11 meses</h4>
+                            <h5 class="base-purple">11 meses</h5>
+
                         </div>
                         <div class="timeline-description">
-                            <p><strong>Pleno</strong> na empresa: <strong>Fabapp</strong> (Startup)</p>
                             <p>Principais habilidades usadas: <strong>PHP, Laravel, MySQL e Administrador de
                                     sistema</strong>
                             </p>
@@ -126,12 +129,15 @@
                     </div>
                     <div class="col-sm-12 timeline-info">
                         <div class="timeline-time">
+                            <small>Empresa:</small>
+                            <h4>W1 Consultoria</h4>
+                            <br>
                             <small>Duração:</small>
-                            <h4>1 ano e 6 meses</h4>
+                            <h5 class="base-purple">1 ano e 6 meses</h5>
                         </div>
+
                         <div class="timeline-description">
-                            <p><strong>Pleno</strong> na empresa: <strong>W1 Consultoria</strong> (Pequena ou média
-                                empresa)</p>
+
                             <p>Principais habilidades usadas: <strong>PHP, Laravel, MySQL e Administrador de
                                     sistema</strong>
                             </p>
