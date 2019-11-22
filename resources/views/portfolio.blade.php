@@ -9,6 +9,7 @@
 
     <link rel="stylesheet" href="{{asset('css/index.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/circle.css')}}"/>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <meta content="💻 Desenvolvedor Back, 20 anos e que curte programar em PHP" name="description">
@@ -29,12 +30,8 @@
 
 <body>
 <div id="root" class="container">
-    <nav class="navbar navbar-expand-lg navbar-dark mb-3">
+    <nav class="navbar navbar-expand-md navbar-dark mb-3">
         <a class="navbar-brand" href="#">danielheart.dev</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-                aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav  ml-auto">
@@ -49,39 +46,38 @@
         </div>
     </nav>
     <div class="row">
-        <div class="col-3">
-            <div class="sticky-top pt-5">
-                <img id="avatar" class="img-fluid " src="{{asset('eu.jpg')}}" alt="Foto de Daniel Reis"/>
+        <div class="col-xs-12 col-md-3">
+            <div class="sticky-top pt-5 sidebar">
+                <div class="avatar">
+                    <img id="avatar" src="{{asset('eu.jpg')}}" alt="Foto de Daniel Reis"/>
+                </div>
                 <h2 id="name" class="text-center">Daniel Reis</h2>
                 <p class="text-center">Pleno | Back-End</p>
-                <hr>
-                <a href="https://twitter.com/danielhe4rt" class="social-links" target="_blank">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    Me siga no Twitter
-                </a>
-                <hr>
-                <a href="https://github.com/danielhe4rt" class="social-links" target="_blank">
-                    <i class="fa fa-github" aria-hidden="true"></i>
-                    Me siga no Github
-                </a>
-                <hr>
-                <a href="https://www.linkedin.com/in/danielheart/" class="social-links" target="_blank">
-                    <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                    Me siga no LinkedIn
-                </a>
-                <hr>
-                <a href="mailto:hey@danielheart.dev" class="social-links" target="_blank">
-                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                    hey@danielheart.dev
-                </a>
-                <hr>
-                <a href="tel:+5511985829611" class="social-links" target="_blank">
-                    <i class="fa fa-phone" aria-hidden="true"></i>
-                    + 55 11 985829611
-                </a>
+                <div class="social-networks">
+                    <a href="https://twitter.com/danielhe4rt" class="social-links" target="_blank">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <label>Me siga no Twitter</label>
+                    </a>
+                    <a href="https://github.com/danielhe4rt" class="social-links" target="_blank">
+                        <i class="fa fa-github" aria-hidden="true"></i>
+                        <label>Me siga no Github</label>
+                    </a>
+                    <a href="https://www.linkedin.com/in/danielheart/" class="social-links" target="_blank">
+                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        <label>Me siga no LinkedIn</label>
+                    </a>
+                    <a href="mailto:hey@danielheart.dev" class="social-links" target="_blank">
+                        <i class="fa fa-envelope" aria-hidden="true"></i>
+                        <label>hey@danielheart.dev</label>
+                    </a>
+                    <a href="tel:+5511985829611" class="social-links" target="_blank">
+                        <i class="fa fa-phone" aria-hidden="true"></i>
+                        <label>+ 55 11 985829611</label>
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="col-9" style="border-left: 1px solid rgba(194,194,194,0.1);">
+        <div class="col-xs-12 col-md-9" style="border-left: 1px solid rgba(194,194,194,0.1);">
             <section id="intro">
                 <h3 class="text-center title">Sobre mim</h3>
                 <p id="bio" class="text-center">
@@ -110,11 +106,11 @@
                         <div class="timeline-time">
                             <small>Empresa:</small>
                             <h4>Fabapp</h4>
-                            <br>
                             <small>Duração:</small>
                             <h5 class="base-purple">11 meses</h5>
 
                         </div>
+                        <div class="separator"></div>
                         <div class="timeline-description">
                             <p>Principais habilidades usadas: <strong>PHP, Laravel, MySQL e Administrador de
                                     sistema</strong>
@@ -131,10 +127,10 @@
                         <div class="timeline-time">
                             <small>Empresa:</small>
                             <h4>W1 Consultoria</h4>
-                            <br>
                             <small>Duração:</small>
                             <h5 class="base-purple">1 ano e 6 meses</h5>
                         </div>
+                        <div class="separator"></div>
 
                         <div class="timeline-description">
 
@@ -179,7 +175,7 @@
                         <label for="exampleFormControlTextarea1">Mensagem</label>
                         <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
-                    <button class="float-right" type="submit">Enviar</button>
+                    <button class="float-right" style="border-radius: .25rem" type="submit">Enviar</button>
                 </form>
             </section>
         </div>

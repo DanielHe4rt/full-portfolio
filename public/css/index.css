@@ -95,17 +95,12 @@ p {
     color: #e7e7e7;
     text-decoration: none;
     transition-duration: 0.5s;
-    margin-left: 5px;
 }
 
 .social-links:hover {
     color: var(--color-purple);
     transition-duration: 0.5s;
-    transform: scale(1.2);
-}
-
-img#avatar {
-    border-radius: 8px !important;
+    transform: scale(1.1);
 }
 
 /* progress */
@@ -155,12 +150,6 @@ div.timeline-info {
     margin-top: 10px;
 }
 
-div.timeline-description {
-    border-left: 5px solid #191633;
-    border-radius: 4px;
-    padding-left: 10px;
-}
-
 /* form  */
 
 form.form-contact {
@@ -206,10 +195,8 @@ form.form-contact label {
 /* Buttons */
 button {
     background: transparent;
-
     color: var(--color-purple);
     border: 1px solid var(--color-purple);
-    border-radius: 15px !important;
     padding: 3px 20px;
     font-weight: bold;
     transition-duration: 1s;
@@ -217,18 +204,15 @@ button {
 
 button:hover {
     background: var(--color-purple);
-
     color: white;
     transition-duration: 1s;
 }
 
-h3.title {
-    margin: 45px 0;
-}
-
 span.badge-custom {
-    font-size: 1.25em;
+    font-size: 1.15em;
     margin: 0.5em;
+    padding-right: 1em;
+    padding-left: 1em;
 }
 
 span.badge-language {
