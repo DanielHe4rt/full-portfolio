@@ -85,8 +85,8 @@
             <section id="intro">
                 <h3 class="text-center title">Sobre mim</h3>
                 <p id="bio" class="text-center">
-                    Jovem programador depressivo que gosta de video game e precisa de um emprego;
-                    Sério me da um emprego
+                    Profissional com experiência em criação de aplicações RESTFul com PHP e Lumen Framework. No tempo livre, livestreamer pela <a href="https://twitch.tv/danielhe4rt" target="_blank">Twitch.tv</a> com conteúdo sobre programação e criador/mentor do projeto
+                    <a href="https://heartdevs.com" target="_blank">He4rt Developers</a>, uma comunidade de programadores que incita novos programadores a ensinar e colaborar em projetos open source.
                 </p>
             </section>
             <section id="skills">
