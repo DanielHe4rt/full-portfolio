@@ -14,7 +14,15 @@ class Type extends Model
         'name'
     ];
 
+    protected $appends = [
+        'slug'
+    ];
+
     public function getNameAttribute(){
         return __('skills.type.' . $this->attributes['name']);
+    }
+
+    public function getSlugAttribute(){
+        return $this->attributes['name'];
     }
 }

@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="_token" content="{{ csrf_token() }}">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="{{asset('css/admin/adminlte.css')}}">
-    <link rel="stylesheet" href="{{asset('css/admin/all.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/toastr.css')}}">
+    <link rel="stylesheet" href="{{url('css/admin/adminlte.css')}}">
+    <link rel="stylesheet" href="{{url('css/admin/all.min.css')}}">
+    <link rel="stylesheet" href="{{url('css/toastr.css')}}">
 
 
     <title>Bootstrap 4 Login/Register Form</title>
