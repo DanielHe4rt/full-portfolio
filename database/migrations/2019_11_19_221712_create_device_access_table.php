@@ -16,7 +16,7 @@ class CreateDeviceAccessTable extends Migration
         Schema::create('device_access', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->ipAddress('ip');
-            $table->string('user_agent',150);
+            $table->string('user_agent');
             $table->timestamps();
         });
     }
