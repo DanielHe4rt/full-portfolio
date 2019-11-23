@@ -16,10 +16,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <link rel="stylesheet" href="{{asset('css\\admin\\all.min.css')}}">
     <!-- Theme style -->
     <link rel="stylesheet" href="{{asset('css\\admin\\adminlte.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/toastr.css')}}"/>
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Google Font: Source Sans Pro -->
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/toastr.css')}}"/>
 </head>
 <body class="hold-transition sidebar-mini">
 <div class="wrapper">

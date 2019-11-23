@@ -6,12 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Daniel Reis</title>
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="{{asset('css/index.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/circle.css')}}"/>
     <link rel="stylesheet" href="{{asset('css/app.css')}}"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"/>
     <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{asset('css/toastr.css')}}"/>
     <meta content="💻 Desenvolvedor Back, 20 anos e que curte programar em PHP" name="description">
     <!-- Android search bar color -->
     <meta content="#34495E" name="theme-color"><!-- Mobile icon -->
@@ -81,8 +83,11 @@
             <section id="intro">
                 <h3 class="text-center title">Sobre mim</h3>
                 <p id="bio" class="text-center">
-                    Profissional com experiência em criação de aplicações RESTFul com PHP e Lumen Framework. No tempo livre, livestreamer pela <a href="https://twitch.tv/danielhe4rt" target="_blank">Twitch.tv</a> com conteúdo sobre programação e criador/mentor do projeto
-                    <a href="https://heartdevs.com" target="_blank">He4rt Developers</a>, uma comunidade de programadores que incita novos programadores a ensinar e colaborar em projetos open source.
+                    Profissional com experiência em criação de aplicações RESTFul com PHP e Lumen Framework. No tempo
+                    livre, livestreamer pela <a href="https://twitch.tv/danielhe4rt" target="_blank">Twitch.tv</a> com
+                    conteúdo sobre programação e criador/mentor do projeto
+                    <a href="https://heartdevs.com" target="_blank">He4rt Developers</a>, uma comunidade de
+                    programadores que incita novos programadores a ensinar e colaborar em projetos open source.
                 </p>
             </section>
             <section id="skills">
@@ -123,6 +128,7 @@
                             </p>
                         </div>
                     </div>
+
                     <div class="col-sm-12 timeline-info">
                         <div class="timeline-time">
                             <small>Empresa:</small>
@@ -152,28 +158,28 @@
                     <div class="row">
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Nome</label>
-                                <input type="name" class="form-control" id="exampleFormControlInput1"
+                                <label for="inputName">Nome</label>
+                                <input type="text" class="form-control" id="inputName" name="name"
                                        placeholder="Seu nome">
                             </div>
                         </div>
                         <div class="col-6">
                             <div class="form-group">
-                                <label for="exampleFormControlInput1">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1"
+                                <label for="inputEmail">Email</label>
+                                <input type="email" class="form-control" id="inputEmail" name="email"
                                        placeholder="seu@email.com">
                             </div>
                         </div>
                     </div>
                     <div class="form-group">
-                        <label for="exampleFormControlInput1">Assunto</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput1"
+                        <label for="inputSubject">Assunto</label>
+                        <input type="text" class="form-control" id="inputSubject" name="subject"
                                placeholder="Quero cotar um freelance | Só queria dar um oi">
                     </div>
 
                     <div class="form-group">
-                        <label for="exampleFormControlTextarea1">Mensagem</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <label for="inputMessage">Mensagem</label>
+                        <textarea class="form-control" id="inputMessage" name="content" rows="3"></textarea>
                     </div>
                     <button class="float-right" style="border-radius: .25rem" type="submit">Enviar</button>
                 </form>
@@ -184,17 +190,17 @@
 </div>
 <footer class="footer">
     <p class="text-center mb-0 p-3">
-        Este site se encontra no <a href="#">Github</a> para ser reutilizado.  DanielHeart.dev © 2020
+        Este site se encontra no <a href="#">Github</a> para ser reutilizado. DanielHeart.dev © 2020
     </p>
 </footer>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
-<script src='{{asset('js/circle-progress.js')}}'></script>
-<script src="{{asset('js/index.js')}}"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="{{asset('js/toastr.js')}}"></script>
+<script src="{{asset('js/index.js')}}"></script>
 </body>
 
 </html>
