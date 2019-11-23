@@ -35,7 +35,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
 Route::prefix('mailer')->group(function () {
     Route::get('/{mailId}','Mailer\\MailerController@getMail');
     Route::put('/{mailId}','Mailer\\MailerController@putMail');
-    Route::post('/contact', 'Mailer\\MailerController@postMail')->middleware(['throttle:rate_limit,1'])->name('post-mail');
+    Route::post('/contact', 'Mailer\\MailerController@postMail')->middleware(['throttle:15'])->name('post-mail');
     Route::delete('/{mailId}','Mailer\\MailerController@deleteMail');
 });
 
