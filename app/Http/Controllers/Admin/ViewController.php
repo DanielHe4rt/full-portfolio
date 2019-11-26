@@ -5,6 +5,8 @@ namespace App\Http\Controllers\Admin;
 
 
 use App\Entities\Helpers\Access;
+use App\Entities\Helpers\Profile;
+use App\Enums\Profile\ProfileEnum;
 use App\Http\Controllers\Controller;
 use App\Repositories\View\ViewRepository;
 use App\Traits\ApiResponse;
@@ -20,6 +22,23 @@ class ViewController extends Controller
     public function __construct()
     {
         $this->repository = new ViewRepository();
+    }
+
+    public function viewPortfolio(){
+        $data = Profile::all();
+        $result = [];
+        foreach($data as $value){
+            $values = [
+                'value' => $value->value,
+                'enabled' => $value->enabled
+            ];
+            $result[$value->slug] = $values;
+        }
+
+        if(env('APP_STATUS') === "MAINENTANCE"){
+            return view('mainentance');
+        }
+        return view('portfolio', ['profile' => $result]);
     }
 
     public function viewDashboard()
@@ -43,5 +62,9 @@ class ViewController extends Controller
     public function viewAllSkills()
     {
         return view('admin.skill.all');
+    }
+
+    public function viewAllProfile(){
+        return view('admin.profile.all');
     }
 }

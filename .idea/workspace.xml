@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e88c47f-e20f-45c4-b1c4-a37813e2657b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/Entities/Helpers/Profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Enums/Profile/ProfileEnum.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/BaseController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Http/Controllers/Profile/ProfileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Mailer/MailerRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Repositories/Profile/ProfileRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/lang/en/profile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/profile/all.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Admin/ViewController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Admin/ViewController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Mailer/MailerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Mailer/MailerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Mail/ContactMail.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Mail/ContactMail.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/AccessTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/AccessTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/portfolio.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/portfolio.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -165,7 +180,11 @@
       <workItem from="1574353355624" duration="2569000" />
       <workItem from="1574379157775" duration="11636000" />
       <workItem from="1574450084121" duration="667000" />
-      <workItem from="1574463966370" duration="4073000" />
+      <workItem from="1574463966370" duration="9824000" />
+      <workItem from="1574557535224" duration="3000" />
+      <workItem from="1574634804782" duration="601000" />
+      <workItem from="1574708082927" duration="5326000" />
+      <workItem from="1574735816504" duration="342000" />
     </task>
     <servers />
   </component>

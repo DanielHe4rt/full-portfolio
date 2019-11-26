@@ -5,7 +5,7 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Daniel Reis</title>
+    <title>{{$profile['fullname']['value']}}</title>
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <link rel="stylesheet" href="{{asset('css/index.css')}}"/>
@@ -18,6 +18,7 @@
     <!-- Android search bar color -->
     <meta content="#34495E" name="theme-color"><!-- Mobile icon -->
     <meta content="DanielHeart - Portfólio" property="og:title">
+    <meta content="{{$profile['picture_url']['value']}}" property="og:image">
     <meta content="website" property="og:type">
     <meta content="💻💻Desenvolvedor Back-end que curte criar Megazords com PHP" property="og:description">
     <meta content="DanielHeart - Portfólio" property="og:site_name"><!-- Twitter Card data -->
@@ -33,8 +34,7 @@
 <body>
 <div id="root" class="container">
     <nav class="navbar navbar-expand-md navbar-dark mb-3">
-        <a class="navbar-brand" href="#">danielheart.dev</a>
-
+        <a class="navbar-brand" href="#">{{env('APP_NAME')}}</a>
         <div class="collapse navbar-collapse" id="navbarColor01">
             <ul class="navbar-nav  ml-auto">
                 <li class="nav-item active">
@@ -44,52 +44,65 @@
                     <a class="nav-link" href="#"> <i class="fa fa-file"></i> Resumo</a>
                 </li>
             </ul>
-
         </div>
     </nav>
     <div class="row">
         <div class="col-xs-12 col-md-3">
             <div class="sticky-top pt-5 sidebar">
-                <div class="avatar">
-                    <img id="avatar" src="{{asset('eu.jpg')}}" alt="Foto de Daniel Reis"/>
-                </div>
-                <h2 id="name" class="text-center">Daniel Reis</h2>
-                <p class="text-center">Pleno | Back-End</p>
+                @if($profile['picture_url']['enabled'])
+                    <div class="avatar">
+                        <img id="avatar" src="{{$profile['picture_url']['value']}}" alt="Foto de Daniel Reis"/>
+                    </div>
+                @endif
+                @if($profile['fullname']['enabled'])
+                    <h2 id="name" class="text-center">{{$profile['fullname']['value']}}</h2>
+                @endif
+                @if($profile['base_description']['enabled'])
+                    <p class="text-center">{{$profile['base_description']['value']}}</p>
+                @endif
                 <div class="social-networks">
-                    <a href="https://twitter.com/danielhe4rt" class="social-links" target="_blank">
-                        <i class="fa fa-twitter" aria-hidden="true"></i>
-                        <label>Me siga no Twitter</label>
-                    </a>
-                    <a href="https://github.com/danielhe4rt" class="social-links" target="_blank">
-                        <i class="fa fa-github" aria-hidden="true"></i>
-                        <label>Me siga no Github</label>
-                    </a>
-                    <a href="https://www.linkedin.com/in/danielheart/" class="social-links" target="_blank">
-                        <i class="fa fa-linkedin-square" aria-hidden="true"></i>
-                        <label>Me siga no LinkedIn</label>
-                    </a>
-                    <a href="mailto:hey@danielheart.dev" class="social-links" target="_blank">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <label>hey@danielheart.dev</label>
-                    </a>
-                    <a href="tel:+5511985829611" class="social-links" target="_blank">
+                    @if($profile['twitter_url']['enabled'])
+                        <a href="{{$profile['twitter_url']['value']}}" class="social-links" target="_blank">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <label>Me siga no Twitter</label>
+                        </a>
+                    @endif
+                    @if($profile['github_url']['enabled'])
+                        <a href="{{$profile['github_url']['value']}}" class="social-links" target="_blank">
+                            <i class="fa fa-github" aria-hidden="true"></i>
+                            <label>Me siga no Github</label>
+                        </a>
+                    @endif
+                    @if($profile['linkedin_url']['enabled'])
+                        <a href="{{$profile['linkedin_url']['value']}}" class="social-links" target="_blank">
+                            <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                            <label>Me siga no LinkedIn</label>
+                        </a>
+                    @endif
+                    @if($profile['email']['enabled'])
+                        <a href="mailto:{{$profile['email']['value']}}" class="social-links" target="_blank">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                            <label>{{$profile['email']['value']}}</label>
+                        </a>
+                    @endif
+                    @if($profile['phone_number']['enabled'])
+                    <a href="tel:{{$profile['phone_number']['value']}}" class="social-links" target="_blank">
                         <i class="fa fa-phone" aria-hidden="true"></i>
-                        <label>+ 55 11 985829611</label>
+                        <label>{{$profile['phone_number']['value']}}</label>
                     </a>
+                    @endif
                 </div>
             </div>
         </div>
         <div class="col-xs-12 col-md-9" style="border-left: 1px solid rgba(194,194,194,0.1);">
+            @if($profile['about']['enabled'])
             <section id="intro">
                 <h3 class="text-center title">Sobre mim</h3>
                 <p id="bio" class="text-center">
-                    Profissional com experiência em criação de aplicações RESTFul com PHP e Lumen Framework. No tempo
-                    livre, livestreamer pela <a href="https://twitch.tv/danielhe4rt" target="_blank">Twitch.tv</a> com
-                    conteúdo sobre programação e criador/mentor do projeto
-                    <a href="https://heartdevs.com" target="_blank">He4rt Developers</a>, uma comunidade de
-                    programadores que incita novos programadores a ensinar e colaborar em projetos open source.
+                    {!! $profile['about']['value'] !!}
                 </p>
             </section>
+            @endif
             <section id="skills">
                 <h3 class="text-center title">Habilidades</h3>
                 <p class="text-center">Abaixo estão as ferramentas que já trabalhei ao decorrer da minha carreira,

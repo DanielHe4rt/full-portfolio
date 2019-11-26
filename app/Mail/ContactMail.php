@@ -29,6 +29,8 @@ class ContactMail extends Mailable
      */
     public function build()
     {
-        return $this->view('mailables.contact');
+        return $this->view('mailables.contact')
+            ->subject('#'  . date('md') . ' Contato via portfólio')
+            ->from($this->data['email']);
     }
 }

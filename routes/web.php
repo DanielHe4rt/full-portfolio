@@ -11,12 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    if(env('APP_STATUS') === "MAINENTANCE"){
-        return view('mainentance');
-    }
-    return view('portfolio');
-});
+Route::get('/', 'Admin\\ViewController@viewPortfolio');
 
 Route::get('/test', function(){
     return view('test');
@@ -29,6 +24,7 @@ Route::prefix('admin')->middleware('auth')->group(function () {
     Route::get('/dashboard', 'Admin\\ViewController@viewDashboard')->name('admin-dashboard');
     Route::get('/mailer','Admin\\ViewController@viewAllMails')->name('get-mail');
     Route::get('/skills','Admin\\ViewController@viewAllSkills')->name('get-skills');
+    Route::get('/profile','Admin\\ViewController@viewAllProfile')->name('get-profile');
 });
 
 
@@ -45,4 +41,9 @@ Route::prefix('skills')->group(function () {
     Route::get('/{skillId}','Skills\\SkillsController@getSkill');
     Route::put('/{skillId}','Skills\\SkillsController@putSkill');
     Route::delete('/{skillId}','Skills\\SkillsController@deleteSkill');
+});
+
+Route::prefix('profile')->group(function () {
+    Route::get('/','Profile\\ProfileController@getProfileData');
+    Route::put('/{profileId}','Profile\\ProfileController@putProfileData');
 });

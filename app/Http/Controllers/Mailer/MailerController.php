@@ -5,16 +5,23 @@ namespace App\Http\Controllers\Mailer;
 
 
 use App\Entities\Mailer\Mail;
-use App\Http\Controllers\Controller;
+use App\Http\BaseController;
 use App\Mail\ContactMail;
+use App\Repositories\Mailer\MailerRepository;
 use App\Traits\ApiResponse;
 use Illuminate\Http\Request;
 use \Illuminate\Support\Facades\Mail as Mailer;
 use Ramsey\Uuid\Uuid;
 
-class MailerController extends Controller
+class MailerController extends BaseController
 {
     use ApiResponse;
+
+    public function __construct(Mailer $model, MailerRepository $repository)
+    {
+        $this->model = $model;
+        $this->repository = $repository;
+    }
 
     public function postMail(Request $request)
     {
@@ -32,14 +39,12 @@ class MailerController extends Controller
         ]);
 
         $data = $request->all();
-        Mail::create($data);
-        Mailer::to(env('APP_EMAIL'))->send(new ContactMail($data));
+        $this->repository->create($data);
         return $this->success();
     }
 
     public function getMail(Request $request, string $mailId){
-        $model =  Mail::findOrFail($mailId)->load('status');
-
+        $model =  $this->repository->findById($mailId,['status']);
         return response()->json($model);
     }
 
@@ -51,9 +56,9 @@ class MailerController extends Controller
             'id' => 'required|exists:mails',
             'status_id' => 'required'
         ]);
-
-        Mail::find($mailId)->update($request->all());
-        return $this->success();
+        $data = $request->all();
+        $result = $this->repository->update($mailId,$data);
+        return $this->success($result);
     }
 
     public function deleteMail(Request $request, string $mailId){
@@ -64,7 +69,7 @@ class MailerController extends Controller
             'id' => 'required|exists:mails'
         ]);
 
-        Mail::find($mailId)->delete();
+        $this->repository->destroy($mailId);
         return $this->success();
     }
 }
